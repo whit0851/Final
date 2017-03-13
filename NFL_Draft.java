@@ -1,4 +1,4 @@
-
+import java.util.*;
 public class NFL_Draft {
 
 	public static void main(String[] args) {
@@ -9,5 +9,8 @@ public class NFL_Draft {
 		player player5 = new player("Thomas Rawls", "RB", "Seahawks", "69 in", "215 lbs", "23", "34", "349", "3", "NA");
 		player player6 = new player("Devonta Freeman", "RB", "Falcons", "68 in", "206 lbs", "24", "24", "1079", "11", "NA");
 	}
-
+	
+	PlayerManager players = new PlayerManager();
+	
+	System.out.print(players.CreatPlayers());
 }

@@ -1,7 +1,7 @@
 
 class player {
-	private String height, weight, age, number, yards, touchdowns, interceptions;
-	private String name, position, team;
+	private String height, weight, age, number, yards, touchdowns, interceptions, name, position, team;
+	
 
 	player(String newname, String newposition, String newteam, String newheight, String newweight, String newage, String newnumber, String newyards, String newtouchdowns, String newinterceptions){
 		name=newname;
