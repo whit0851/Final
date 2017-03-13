@@ -1,20 +1,9 @@
-import java.util.*;
-public class NFL_Player {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-//All of the following are met: Code has proper standards, 
-//class has at least 10 properties, class has at least three property types, 
-//and properties are documented.
-	}
-
-}
 
 class player {
-	private double height, weight, age, number, combine, touchdowns, interceptions;
+	private String height, weight, age, number, yards, touchdowns, interceptions;
 	private String name, position, team;
 
-	player(String newname, String newposition, String newteam, double newheight, double newweight, double newage, double newnumber, double newcombine, double newtouchdowns, double newinterceptions){
+	player(String newname, String newposition, String newteam, String newheight, String newweight, String newage, String newnumber, String newyards, String newtouchdowns, String newinterceptions){
 		name=newname;
 		position=newposition;
 		team=newteam;
@@ -22,7 +11,7 @@ class player {
 		weight=newweight;
 		age=newage;
 		number=newnumber;
-		combine=newcombine;
+		yards=newyards;
 		touchdowns=newtouchdowns;
 		interceptions=newinterceptions;
 	}
@@ -44,46 +33,46 @@ class player {
 	String getteam(){
 		return team;
 	}
-	public void setheight(double newheight){
+	public void setheight(String newheight){
 		height=newheight;
 	}
-	double getheight(){
+	String getheight(){
 		return height;
 	}
-	public void setweight(double newweight){
+	public void setweight(String newweight){
 		weight=newweight;
 	}
-	double getweight(){
+	String getweight(){
 		return weight;
 	}
-	public void setage(double newage){
+	public void setage(String newage){
 		age=newage;
 	}
-	double getage(){
+	String getage(){
 		return age;
 	}
-	public void setnumber(double newnumber){
+	public void setnumber(String newnumber){
 		number=newnumber;
 	}
-	double getnumber(){
+	String getnumber(){
 		return number;
 	}
-	public void setcombine(double newcombine){
-		combine=newcombine;
+	public void setcombine(String newyards){
+		yards=newyards;
 	}
-	double getcombine(){
-		return combine;
+	String getyards(){
+		return yards;
 	}
-	public void settouchdowns(double newtouchdowns){
+	public void settouchdowns(String newtouchdowns){
 		touchdowns=newtouchdowns;
 	}
-	double gettouchdowns(){
+	String gettouchdowns(){
 		return touchdowns;
 	}
-	public void setinterceptions(double newinterceptions){
+	public void setinterceptions(String newinterceptions){
 		interceptions=newinterceptions;
 	}
-	double getinterceptions(){
+	String getinterceptions(){
 		return interceptions;
 	}
 	
