@@ -1,9 +1,9 @@
 
-class player {
-	private String height, weight, age, number, yards, touchdowns, interceptions, name, position, team;
-	
+ class player {
+	private String  name, position, team;
+	private int height, weight, age, number, yards, touchdowns, interceptions;
 
-	player(String newname, String newposition, String newteam, String newheight, String newweight, String newage, String newnumber, String newyards, String newtouchdowns, String newinterceptions){
+	player(String newname, String newposition, String newteam, int newheight, int newweight, int newage, int newnumber, int newyards, int newtouchdowns, int newinterceptions){
 		name=newname;
 		position=newposition;
 		team=newteam;
@@ -33,46 +33,46 @@ class player {
 	String getteam(){
 		return team;
 	}
-	public void setheight(String newheight){
+	public void setheight(int newheight){
 		height=newheight;
 	}
-	String getheight(){
+	int getheight(){
 		return height;
 	}
-	public void setweight(String newweight){
+	public void setweight(int newweight){
 		weight=newweight;
 	}
-	String getweight(){
+	int getweight(){
 		return weight;
 	}
-	public void setage(String newage){
+	public void setage(int newage){
 		age=newage;
 	}
-	String getage(){
+	int getage(){
 		return age;
 	}
-	public void setnumber(String newnumber){
+	public void setnumber(int newnumber){
 		number=newnumber;
 	}
-	String getnumber(){
+	int getnumber(){
 		return number;
 	}
-	public void setcombine(String newyards){
+	public void setcombine(int newyards){
 		yards=newyards;
 	}
-	String getyards(){
+	int getyards(){
 		return yards;
 	}
-	public void settouchdowns(String newtouchdowns){
+	public void settouchdowns(int newtouchdowns){
 		touchdowns=newtouchdowns;
 	}
-	String gettouchdowns(){
+	int gettouchdowns(){
 		return touchdowns;
 	}
-	public void setinterceptions(String newinterceptions){
+	public void setinterceptions(int newinterceptions){
 		interceptions=newinterceptions;
 	}
-	String getinterceptions(){
+	int getinterceptions(){
 		return interceptions;
 	}
 	
