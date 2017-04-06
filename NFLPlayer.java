@@ -8,7 +8,7 @@
  *
  * @author charlesw
  */
-public abstract class NFLPlayer {
+public abstract class NFLPlayer implements Celebrator{
 	private String  name, position, team;
 	private int height, weight, age, number, yards, touchdowns;
 

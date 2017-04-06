@@ -5,7 +5,7 @@
  */
 
 
-public class OffensivePlayer extends NFLPlayer {
+public class OffensivePlayer extends NFLPlayer implements Celebrator {
 private int passingyrds, rushingyrds;
     public OffensivePlayer(String newname, String newposition, String newteam, int newheight, int newweight, int newage, int newnumber, int newyards, int newtouchdowns, int newinterceptions, int passingyrds, int rushingyrds) {
         super(newname, newposition, newteam, newheight, newweight, newage, newnumber, newyards, newtouchdowns);
@@ -21,5 +21,10 @@ private int passingyrds, rushingyrds;
     }
     public int getRushingyrds(){
         return rushingyrds;
+    }
+
+    @Override
+    public void celebrate() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
