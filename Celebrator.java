@@ -9,5 +9,5 @@
  * @author charlesw
  */
 public interface Celebrator {
-    void celebrate();
+    public abstract String celebrate();
 }

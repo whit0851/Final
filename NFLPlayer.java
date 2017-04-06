@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author charlesw
@@ -77,6 +76,18 @@ public abstract class NFLPlayer implements Celebrator{
 	int gettouchdowns(){
 		return touchdowns;
 	}
-	
+	@Override
+        public String celebrate() {
+        int random = (int)( 4 * Math.random() + 1);
+        String celebration;
+        switch (random){
+            case 1: celebration = " dances to celebrate his draft."; break;
+            case 2: celebration = " backflips to celebrate his draft."; break;
+            case 3: celebration = " hoots in joy to celebrate his draft."; break;
+            case 4: celebration = " highfives himself to celebrate his draft."; break;
+            default : celebration = " weeps tears of happiness to celebrate his draft."; break;
+        }
+        return celebration;   
+    }
 }
 

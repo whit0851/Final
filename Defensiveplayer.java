@@ -3,8 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-
 public class Defensiveplayer extends NFLPlayer implements Celebrator {
 private int tackles, sacks, interceptions;
 
@@ -31,7 +29,16 @@ private int tackles, sacks, interceptions;
 	}
 
     @Override
-    public void celebrate() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public String celebrate() {
+        int random = (int)( 4 * Math.random() + 1);
+        String celebration;
+        switch (random){
+            case 1: celebration = " dances to celebrate his draft."; break;
+            case 2: celebration = " backflips to celebrate his draft."; break;
+            case 3: celebration = " hoots in joy to celebrate his draft."; break;
+            case 4: celebration = " highfives himself to celebrate his draft."; break;
+            default : celebration = " weeps tears of happiness to celebrate his draft."; break;
+        }
+        return celebration;   
     }
 }
