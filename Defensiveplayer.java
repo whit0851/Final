@@ -9,6 +9,11 @@ private int tackles, sacks, interceptions;
     public Defensiveplayer(String newname, String newposition, String newteam, int newheight, int newweight, int newage, int newnumber, int newyards, int newtouchdowns, int interceptions, int tackles, int sacks) {
         super(newname, newposition, newteam, newheight, newweight, newage, newnumber, newyards, newtouchdowns);
     }
+    public String getName(){
+        return super.getname();
+    }
+            
+            
     public void setTackles(int tackles){
         this.tackles = tackles;
     }
